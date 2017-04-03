@@ -182,12 +182,19 @@
 
    <div class="main">
      
-      <p>Рассчитать стоимость ремонта квартиры</p>
+      <p class="main_head">Получите <span class="main_head_span">бесплатный расчет стоимости</span> ремонта уже сегодня</p>
        
 		<form id="application" action="send-form.php" method="POST" name="application ">
-			<input name="name" id="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
-			<input name="mail" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail" required/>
-			<input name="tel" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required />
+			<input name="sqw" id="applicationName" maxlength="20" placeholder="Укажите площадь"/>
+			<select id="applicationSelect" name="rem">
+				<option value="0">Уровень ремонта</option>
+				<option value="1">Ремонт под сдачу</option>
+				<option value="2">Экономичный ремонт</option>
+				<option value="3">Средний ремонт</option>
+				<option value="4">Элитны ремонт</option>
+			</select>
+			<input name="name" type="text" id="applicationEmail" maxlength="20" placeholder="Введите ваше имя*" required />
+			<input name="tel" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон*" required />
 			<button class="applicationButton" type="submit" form="application"> Отправить заявку </button>
 		</form>
 	</div>

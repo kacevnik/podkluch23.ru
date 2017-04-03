@@ -2,31 +2,35 @@
 
 /*Контейнер с фоном и текстом*/
 .main {
-    width: 350px;
-    height: 250px;
-    margin: 0 auto;
-    padding: 10px 0;
+    margin-top: 100px;
+    width: 100%;
  background: #484d53;
     font-family: 'PT Sans', sans-serif;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
     text-align: center;
+    padding: 25px 0 40px;
 }
 
+.main .main_head{
+    font-size: 30px;
+    padding: 15px 0;
+    color: #d58512;
+    font-weight: bold;
+}
 
+.main .main_head .main_head_span{
+    color: #ffff66;
+}
 .main h3 {
     font-size: 30px;
     color: #fff;
 }
 
-.main p {
-    font-size: 50px;
-    color: white;
-    line-height: 10px;
-}
+
 
 /* Стили формы */
 #application {
-    width: 275px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -36,13 +40,21 @@
     height: 40px;
     background: none;
     margin-top: 15px;
+    margin-right: 25px;
     border: 1px solid #fff;
-    border-radius: 40px;
+    border-radius: 7px;
     text-align: center;
     color: #fff;
     font-size: 16px;
 }
-
+#applicationSelect{
+    border: 1px solid #fff;
+    background: #484d53;
+    padding: 8px 5px;
+    color: #fff;
+    height: 39px;
+    margin-right: 25px;
+}
 /*Стили полей при клике по ним*/
 #applicationName:focus, #applicationEmail:focus, #applicationTelephone:focus {
     border: 1px solid #30ad64;
@@ -85,7 +97,7 @@
     border: none;
     width: 200px;
     height: 40px;
-    border-radius: 40px;
+    border-radius: 7px;
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;

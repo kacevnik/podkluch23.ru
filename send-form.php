@@ -42,10 +42,11 @@ $user_agent = $_SERVER["HTTP_USER_AGENT"];
 	
 //taking the data from form	
 
-
+$remont = array('Уровень ремонта','Ремонт под сдачу','Экономичный ремонт','Средний ремонт','Элитны ремонт');
 $tel = addslashes(trim($_POST['tel']));
-$mail = addslashes(trim($_POST['mail']));
+$sqw = addslashes(trim($_POST['sqw']));
 $name = addslashes(trim($_POST['name']));
+$rem = addslashes(trim($_POST['rem']));
 
 
 
@@ -54,12 +55,13 @@ $name = addslashes(trim($_POST['name']));
 $headers = "MIME-Version: 1.0\n";
 $headers .= "Content-type: text/html; charset=utf-8\n";
 $headers .= "Content-Transfer-Encoding: quoted-printable\n";
-$headers .= "From: $email\n";
+$headers .= "From: igor.kevler@mail.ru\n";
 
 $content = 
 'Ваше имя: '.$name.'<br>'.
-'Ваша почта: '.$mail.'<br>'.
+'Площадь: '.$sqw.'<br>'.
 'Телефон: '.$tel.'<br>'.
+'Уровень ремонта: '.$remont[$rem].'<br>'.
 'Time: '.$timestamp.'<br>'.
 'IP: '.$host.'<br>'.
 'User agent: '.$user_agent;
