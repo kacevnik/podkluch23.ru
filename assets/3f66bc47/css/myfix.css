@@ -1,0 +1,9 @@
+
+ul.navigation li.active a, ul.navigation li.active a:hover{
+	background-color: transparent!important;
+}
+ul.navigation .dropdown-menu>.active>a,
+ul.navigation .dropdown-menu>.active>a:focus,
+ul.navigation .dropdown-menu>.active>a:hover{
+background-color: transparent!important;	
+}
